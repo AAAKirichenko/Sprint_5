@@ -27,7 +27,7 @@ class TestRegistrationWithNewCredentials:
 
 class TestRegistrationIncorrectPassword:
 
-    def test_error_password_for_registration(self, driver):
+    def test_filed_registration(self, driver):
         # arrange
         name, email, password = generate_registration_data_for_error_password()
         driver.find_element(*Locators.ENTER_BUTTON).click()
@@ -41,14 +41,3 @@ class TestRegistrationIncorrectPassword:
         # assert
         assert error_text == 'Некорректный пароль'
 
-#class TestCheckingCreationExistingAccount:
-
-    #def test_failed_registration(self, driver):
-        #driver.find_element(*Locators.ENTER_BUTTON).click()
-        #driver.find_element(*Locators.REG_LINK).click()
-        #driver.find_element(*Locators.NAME).send_keys(Credentials.name)
-        #driver.find_element(*Locators.EMAIL).send_keys(Credentials.email)
-        #driver.find_element(*Locators.PASSWORD).send_keys(Credentials.password)
-        #driver.find_element(*Locators.REGISTER_BUTTON).click()
-        #reg_text = WebDriverWait(driver, 10).until(EC.visibility_of_element_located(Locators.REG_POPUP)).text
-        #assert reg_text == 'Что-то пошло не так!\nПопробуйте ещё раз.'
