@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
 
-
 class Locators:
 
     #1 Локаторы для регистрации
@@ -8,7 +7,6 @@ class Locators:
     ENTER_BUTTON = (By.XPATH, "//button[@class='button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg']")
     # Ссылка "Зарегистрироваться"
     REG_LINK = (By.XPATH, "//a[@class='Auth_link__1fOlj']")
-    #REG_POPUP = (By.XPATH, "//p[@class='popup__status-message']")
     # Поле "Имя"
     NAME = (By.XPATH, "//div[label[contains(text(), 'Имя')]]//input")
     # Поле "Email"
@@ -17,7 +15,7 @@ class Locators:
     PASSWORD = (By.CSS_SELECTOR, "input[name='Пароль']")
     # Кнопка "Зарегистрироваться"
     REGISTER_BUTTON = (By.XPATH, "//button[@class='button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa']")
-    # Заголовок Вход
+    # Заголовок "Вход"
     REG_TITLE = (By.XPATH, "//h2[text()='Вход']")
     # Текст ошибки пароля
     TEXT_REG_ERROR = (By.XPATH, "//p[@class='input__error text_type_main-default']")
@@ -48,7 +46,6 @@ class Locators:
     #4 Переход из личного кабинета в конструктор и на логотип
     # Кнопка "Конструктор" в личном кабинете
     BUTTON_CONSTRUCTOR = (By.XPATH, "//p[text()='Конструктор']")
-    #BUTTON_CONSTRUCTOR = (By.XPATH, "//a[@class='AppHeader_header__link__3D_hX']//p[@class='AppHeader_header__linkText__3q_va' and text()='Конструктор']")
     # Логотип
     LOGOTIP = (By.XPATH, "//div[@class='AppHeader_header__logo__2D0X2']")
 
@@ -61,22 +58,5 @@ class Locators:
     BUNS_BUTTON = (By.XPATH, ".//span[contains(text(), 'Булки')]")
     # Кнопка "Соусы"
     SAUCES_BUTTON = (By.XPATH, "//span[text()='Соусы']")
-    #SAUCES_BUTTON = (By.XPATH, "//div[contains(text(), 'Соусы')]")
     #Кнопка "Начинки"
     FILLINGS_BUTTON = (By.XPATH, "//span[text()='Начинки']")
-    # Заголовок "Булки"
-    BUNS_CHAPTER = (By.XPATH, "//h2[text()='Булки']")
-    # Заголовок "Соусы"
-    SAUCES_CHAPTER = (By.XPATH, "//h2[text()='Соусы']")
-    #Заголовок "Начинки"
-    FILLINGS_CHAPTER = (By.XPATH, "//h2[text()='Начинки']")
-
-
-    # Текст при повторной попытке зарегистрироваться
-    REG_POPUP = (By.XPATH, "//p[@class='input__error text_type_main-default']") # Такой пользователь уже существует
-
-    # Локаторы для изменения аватара
-    #PROFILE_IMAGE = (By.XPATH, "//div[@class='profile__image']")
-    #AVATAR_INPUT = (By.ID, "owner-avatar")
-    #UPDATE_AVATAR_BUTTON = (By.XPATH, "//form[@name='edit-avatar']/button[@class='button popup__button']")
-    #CARDS = (By.CLASS_NAME, "card__image")
