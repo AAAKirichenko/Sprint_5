@@ -13,7 +13,7 @@ from locators import Locators
 def driver():
     # Создаем опции для Chrome
     options = Options()
-    options.add_argument("--window-size=1800,900")  # Задаем размер окна
+    options.add_argument("--window-size=1920,1080")  # Задаем размер окна
 
     # Инициализируем драйвер (путь к нему должен быть в PATH)
     driver = webdriver.Chrome(options=options)
