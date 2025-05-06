@@ -6,7 +6,6 @@ from locators import Locators
 
 
 class TestRegistrationWithNewCredentials:
-
     def test_sucsess_registration(self, driver):
         #arrange
         name, email, password = generate_registration_data()
@@ -25,7 +24,6 @@ class TestRegistrationWithNewCredentials:
 
 
 class TestRegistrationIncorrectPassword:
-
     def test_filed_registration(self, driver):
         # arrange
         name, email, password = generate_registration_data_for_error_password()

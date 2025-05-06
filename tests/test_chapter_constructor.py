@@ -1,8 +1,6 @@
-
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from data import Credentials
 from locators import Locators
 
 # Переход к разделам "Булки"
