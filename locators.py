@@ -56,7 +56,13 @@ class Locators:
     #6 Раздел "Конструктор"
     # Кнопка "Булки"
     BUNS_BUTTON = (By.XPATH, ".//span[contains(text(), 'Булки')]")
+    # Проверка активности раздела "Булки"
+    ACTIV_BUNS_BUTTON = (By.XPATH, "//div[contains(@class, 'tab_type_current')]//span[text()='Булки']")
     # Кнопка "Соусы"
     SAUCES_BUTTON = (By.XPATH, "//span[text()='Соусы']")
+    # Проверка активности раздела "Соусы"
+    ACTIV_SAUCES_BUTTON = (By.XPATH, "//div[contains(@class, 'tab_type_current')]//span[text()='Соусы']")
     #Кнопка "Начинки"
     FILLINGS_BUTTON = (By.XPATH, "//span[text()='Начинки']")
+    # Проверка активности раздела "Начинки"
+    ACTIV_FILLINGS_BUTTON = (By.XPATH, "//div[contains(@class, 'tab_type_current')]//span[text()='Начинки']")
